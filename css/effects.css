@@ -1,0 +1,79 @@
+.astronaut:hover{
+    cursor: pointer;
+}
+
+.arrow:hover {
+    cursor: pointer;
+    scale: 1.2;
+}
+
+.planets figure:hover,
+h1:hover,
+.astronaut-p:hover,
+legend:hover {
+    cursor: pointer;
+    scale: 1.1;
+}
+
+.form-input input:hover,
+.form-input input:focus {
+    border: none;
+    outline: 3px solid var(--title);
+    
+}
+
+button:hover {
+    cursor: pointer;
+    background: var(--gradient-hover);
+    scale: 1.1;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--gradient);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--title);
+    border-radius: 12px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #f124ad;
+}
+
+@keyframes astronaut {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-50px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes arrow {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-40px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes planets {
+    0% {
+        transform: rotate(0turn);
+    }
+    100% {
+        transform: rotate(1turn);
+    }
+}

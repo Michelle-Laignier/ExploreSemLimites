@@ -1,0 +1,193 @@
+:root {
+    font-size: 62.5%;
+
+    --gradient: linear-gradient(134deg, #343193 0%, #302C63 100%);
+    --gradient-hover: linear-gradient(134deg, #2c26e2 0%, #1d128b 100%);
+    --text: #312D64;
+    --title: #B52184;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+    font-family: 'Mulish', sans-serif;
+}
+
+.astronaut-container {
+    text-align: center;
+}
+
+.astronaut {
+    animation: astronaut 3s linear infinite;
+    height: 37rem;
+    margin-bottom: 1.7rem;
+    transition: 0.5s linear;
+    width: 36.4rem;
+}
+
+.astronaut-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+h1 {
+    color: var(--title);
+    font-size: 3.2rem;
+    font-weight: 900;
+    transition: 0.3s linear;
+}
+
+.astronaut-p {
+    color: var(--text);
+    font-size: 2rem;
+    font-weight: 600;
+    transition: 0.3s linear;
+}
+
+.arrow {
+    animation: arrow 1.5s ease-out infinite;
+    margin-top: 3.5rem;
+    transition: 0.5s linear;
+}
+
+.planets {
+    background: var(--gradient);
+    display: flex;
+    flex-direction: column;
+    gap: 4.9rem;
+    margin: 9.3rem 0 7.8rem;
+    padding: 5.2rem 3.2rem;
+}
+
+.planets figure {
+    background-color: white;
+    border-radius: 1.9rem;
+    box-shadow: 0px 3.3107693195343018px 13.243077278137207px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    padding: 2.6rem;
+    transition: 0.3s linear;
+}
+
+.planets img {
+    animation: planets 15s linear infinite;
+    height: 8rem;
+    margin-bottom: 3.3rem;
+    width: 8rem;
+}
+
+.planets h2 {
+    color: var(--title);
+    font-size: 2.9rem;
+    font-weight: 900;
+    margin-bottom: 1.8rem;
+}
+
+.planets p {
+    color: var(--text);
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+fieldset {
+    border: none;
+}
+
+legend {
+    color: var(--title);
+    font-size: 3.2rem;
+    font-weight: 900;
+    margin-bottom: 4.3rem;
+    text-align: center;
+    transition: 0.3s linear;
+}
+
+form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.form-container label {
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    width: 1px;
+}
+
+.form-input input::placeholder {
+    color: var(--text);
+}
+
+.form-input input {
+    border: 1.5px solid var(--text);
+    border-radius: 1.6rem;
+    color: var(--text);
+    font-family: 'Mulish', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding: 1.2rem 5rem;
+}
+
+#name {
+    background-image: url(../img/person.png);
+    background-position: 1.4rem;
+    background-repeat: no-repeat;
+}
+
+#email {
+    background-image: url(../img/email.png);
+    background-position: 1.4rem;
+    background-repeat: no-repeat;
+}
+
+.input3 {
+    height: 12.6rem;
+}
+
+#textarea {
+    padding: 1.2rem 0 9.8rem 1.6rem;
+    width: 29.8rem;
+}
+
+button {
+    border: none;
+    border-radius: 1.6rem;
+    background: var(--gradient);
+    color: white;
+    font-family: 'Mulish', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 2.4rem;
+    padding: 1.6rem;
+    transition: 0.3s linear;
+}
+
+.stars {
+    display: none;
+}
+
+footer {
+    align-items: center;
+    background: var(--gradient);
+    color: white;
+    display: flex;
+    font-size: 1.9rem;
+    font-weight: 600;
+    height: 7.8rem;
+    justify-content: center;
+    margin-top: 6.5rem;
+}
